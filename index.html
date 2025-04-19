@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Medical Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <div id="chat"></div>
+
+    <select id="languageSelector">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+      <option value="ta">Tamil</option>
+    </select>
+
+    <input type="text" id="userInput" placeholder="Ask your health question..." />
+    <div id="chat" class="chat-content">
+        <!-- Messages will go here -->
+        <div id="question-section" class="question-box">
+            <p class="bot-question">Do you have a fever?</p>
+            <div class="response-options">
+              <button class="option-btn">Yes</button>
+              <button class="option-btn">No</button>
+              <button class="option-btn">I don’t know</button>
+              <button class="option-btn">What does this mean?</button>
+            </div>
+          </div>
+          
+    <button id="sendBtn">Send</button>
+    <button id="micBtn">🎤</button>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
